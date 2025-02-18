@@ -1,0 +1,15 @@
+# If not set, Linux will attempt to pull in security updates without our proxy configuration.  This will stall the instance.
+repo_upgrade: none
+
+chpasswd:
+  expire: false
+  list:
+    - pslearner:${win_rdp_password}
+
+groups:
+  - docker: [ pslearner ]
+
+system_info:
+  default_user:
+    name: pslearner
+    sudo: ALL=(ALL) NOPASSWD:ALL 

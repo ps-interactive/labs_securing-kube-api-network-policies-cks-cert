@@ -1,0 +1,1 @@
+# labs_securing-kube-api-network-policies-cks-cert
